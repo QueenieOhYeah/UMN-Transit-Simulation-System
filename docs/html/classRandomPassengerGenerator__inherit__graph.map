@@ -1,0 +1,4 @@
+<map id="RandomPassengerGenerator" name="RandomPassengerGenerator">
+<area shape="rect" id="node1" title="The main class for the generation of passengers." alt="" coords="5,153,221,240"/>
+<area shape="rect" id="node2" href="$classPassengerGenerator.html" title="Virtual class for the generation of passengers." alt="" coords="23,5,204,105"/>
+</map>

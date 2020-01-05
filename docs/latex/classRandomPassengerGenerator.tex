@@ -1,0 +1,71 @@
+\hypertarget{classRandomPassengerGenerator}{}\doxysection{Random\+Passenger\+Generator Class Reference}
+\label{classRandomPassengerGenerator}\index{RandomPassengerGenerator@{RandomPassengerGenerator}}
+
+
+The main class for the generation of passengers.  
+
+
+
+
+{\ttfamily \#include $<$random\+\_\+passenger\+\_\+generator.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Passenger\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classRandomPassengerGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Passenger\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classRandomPassengerGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRandomPassengerGenerator_ae01ee95340dd45ee8a1b448b40384fb5}\label{classRandomPassengerGenerator_ae01ee95340dd45ee8a1b448b40384fb5}} 
+{\bfseries Random\+Passenger\+Generator} (std\+::list$<$ double $>$, std\+::list$<$ \mbox{\hyperlink{classStop}{Stop}} $\ast$ $>$)
+\item 
+int \mbox{\hyperlink{classRandomPassengerGenerator_aba2d80cde33371cf9c3d033f1b8ba6b8}{Generate\+Passengers}} () override
+\begin{DoxyCompactList}\small\item\em Generation of a passenger with a randomized name and random destination within bounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The main class for the generation of passengers. 
+
+This function has parameters of a list of probability that a passenger appears at certain stop and a list of pointer to the stops correspondingly. Calls to \mbox{\hyperlink{classRandomPassengerGenerator_aba2d80cde33371cf9c3d033f1b8ba6b8}{Generate\+Passengers}} function generate passengers in stops. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandomPassengerGenerator_aba2d80cde33371cf9c3d033f1b8ba6b8}\label{classRandomPassengerGenerator_aba2d80cde33371cf9c3d033f1b8ba6b8}} 
+\index{RandomPassengerGenerator@{RandomPassengerGenerator}!GeneratePassengers@{GeneratePassengers}}
+\index{GeneratePassengers@{GeneratePassengers}!RandomPassengerGenerator@{RandomPassengerGenerator}}
+\doxysubsubsection{\texorpdfstring{GeneratePassengers()}{GeneratePassengers()}}
+{\footnotesize\ttfamily int Random\+Passenger\+Generator\+::\+Generate\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generation of a passenger with a randomized name and random destination within bounds. 
+
+With the random name from \mbox{\hyperlink{classPassenger}{Passenger}} Factory, generate passengers in stops based on probability. \begin{DoxyReturn}{Returns}
+the number od passengers that are generated. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPassengerGenerator}{Passenger\+Generator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{random__passenger__generator_8h}{random\+\_\+passenger\+\_\+generator.\+h}}\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{random__passenger__generator_8cc}{random\+\_\+passenger\+\_\+generator.\+cc}}\end{DoxyCompactItemize}

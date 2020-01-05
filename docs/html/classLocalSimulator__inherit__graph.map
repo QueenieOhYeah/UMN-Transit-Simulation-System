@@ -1,0 +1,4 @@
+<map id="LocalSimulator" name="LocalSimulator">
+<area shape="rect" id="node1" title="The main class to simulate the transit system." alt="" coords="40,193,150,280"/>
+<area shape="rect" id="node2" href="$classSimulator.html" title="Virtual class to simulate the transit system." alt="" coords="5,5,185,145"/>
+</map>

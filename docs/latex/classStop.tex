@@ -1,0 +1,166 @@
+\hypertarget{classStop}{}\doxysection{Stop Class Reference}
+\label{classStop}\index{Stop@{Stop}}
+
+
+The main class to define stop.  
+
+
+
+
+{\ttfamily \#include $<$stop.\+h$>$}
+
+
+
+Collaboration diagram for Stop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classStop__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStop_a59d881f072b1cf89512bb15a51ffc773}{Stop}} (int, double=44.\+973723, double=-\/93.\+235365)
+\begin{DoxyCompactList}\small\item\em Constructs a stop with latitude and longitude. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStop_a2f3b845d5a338f197226c90696314904}{Get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get if of the stops\+\_\+. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStop_a20a8b6035679d92a7a838a03a102bcd1}{Add\+Passengers}} (\mbox{\hyperlink{classPassenger}{Passenger}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Method to add passengers to the stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStop_aa373ae256ce6bc01ef13e876dfdec5bd}\label{classStop_aa373ae256ce6bc01ef13e876dfdec5bd}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{classStop_a8867083c918238b8938148dddb53d2de}\label{classStop_a8867083c918238b8938148dddb53d2de}} 
+void {\bfseries Report} (std\+::ostream \&out) const
+\item 
+int \mbox{\hyperlink{classStop_a834c75e1f15b27a4ddfe733aa6de500c}{Load\+Passengers}} (\mbox{\hyperlink{classBus}{Bus}} $\ast$bus)
+\begin{DoxyCompactList}\small\item\em Method to load passenger on bus. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classStop_a529a2736668022cfa67856e179ed2ed1}{Get\+Long}} ()
+\begin{DoxyCompactList}\small\item\em Getter of longitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classStop_a8efa6828cc5549b2767ed1c38ccf5683}{Get\+Lat}} ()
+\begin{DoxyCompactList}\small\item\em Getter of latitude. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStop_ad2278c480b060a922f3e8267d43586d1}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter of stop name. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classStop_a60d1d5c424e7fee4ce3e37e687ed8531}{Get\+Num\+Passengers}} ()
+\begin{DoxyCompactList}\small\item\em Getter of number of passengers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class to define stop. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStop_a59d881f072b1cf89512bb15a51ffc773}\label{classStop_a59d881f072b1cf89512bb15a51ffc773}} 
+\index{Stop@{Stop}!Stop@{Stop}}
+\index{Stop@{Stop}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily Stop\+::\+Stop (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{double}]{longitude = {\ttfamily 44.973723},  }\item[{double}]{latitude = {\ttfamily -\/93.235365} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a stop with latitude and longitude. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStop_a20a8b6035679d92a7a838a03a102bcd1}\label{classStop_a20a8b6035679d92a7a838a03a102bcd1}} 
+\index{Stop@{Stop}!AddPassengers@{AddPassengers}}
+\index{AddPassengers@{AddPassengers}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{AddPassengers()}{AddPassengers()}}
+{\footnotesize\ttfamily int Stop\+::\+Add\+Passengers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPassenger}{Passenger}} $\ast$}]{pass }\end{DoxyParamCaption})}
+
+
+
+Method to add passengers to the stop. 
+
+This function adds passengers to the stop.
+
+\begin{DoxyReturn}{Returns}
+the number of passenger added which is 1 if successfully added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_a2f3b845d5a338f197226c90696314904}\label{classStop_a2f3b845d5a338f197226c90696314904}} 
+\index{Stop@{Stop}!GetId@{GetId}}
+\index{GetId@{GetId}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily int Stop\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get if of the stops\+\_\+. 
+
+\begin{DoxyReturn}{Returns}
+id of the stop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_a8efa6828cc5549b2767ed1c38ccf5683}\label{classStop_a8efa6828cc5549b2767ed1c38ccf5683}} 
+\index{Stop@{Stop}!GetLat@{GetLat}}
+\index{GetLat@{GetLat}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{GetLat()}{GetLat()}}
+{\footnotesize\ttfamily double Stop\+::\+Get\+Lat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of latitude. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_a529a2736668022cfa67856e179ed2ed1}\label{classStop_a529a2736668022cfa67856e179ed2ed1}} 
+\index{Stop@{Stop}!GetLong@{GetLong}}
+\index{GetLong@{GetLong}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{GetLong()}{GetLong()}}
+{\footnotesize\ttfamily double Stop\+::\+Get\+Long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of longitude. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_ad2278c480b060a922f3e8267d43586d1}\label{classStop_ad2278c480b060a922f3e8267d43586d1}} 
+\index{Stop@{Stop}!GetName@{GetName}}
+\index{GetName@{GetName}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Stop\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of stop name. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_a60d1d5c424e7fee4ce3e37e687ed8531}\label{classStop_a60d1d5c424e7fee4ce3e37e687ed8531}} 
+\index{Stop@{Stop}!GetNumPassengers@{GetNumPassengers}}
+\index{GetNumPassengers@{GetNumPassengers}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{GetNumPassengers()}{GetNumPassengers()}}
+{\footnotesize\ttfamily size\+\_\+t Stop\+::\+Get\+Num\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of number of passengers. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStop_a834c75e1f15b27a4ddfe733aa6de500c}\label{classStop_a834c75e1f15b27a4ddfe733aa6de500c}} 
+\index{Stop@{Stop}!LoadPassengers@{LoadPassengers}}
+\index{LoadPassengers@{LoadPassengers}!Stop@{Stop}}
+\doxysubsubsection{\texorpdfstring{LoadPassengers()}{LoadPassengers()}}
+{\footnotesize\ttfamily int Stop\+::\+Load\+Passengers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBus}{Bus}} $\ast$}]{bus }\end{DoxyParamCaption})}
+
+
+
+Method to load passenger on bus. 
+
+\begin{DoxyReturn}{Returns}
+the number of passenger loaded on bus. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{stop_8h}{stop.\+h}}\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{stop_8cc}{stop.\+cc}}\end{DoxyCompactItemize}

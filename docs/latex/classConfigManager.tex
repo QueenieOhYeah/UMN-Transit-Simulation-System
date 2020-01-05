@@ -1,0 +1,68 @@
+\hypertarget{classConfigManager}{}\doxysection{Config\+Manager Class Reference}
+\label{classConfigManager}\index{ConfigManager@{ConfigManager}}
+
+
+The main class to read from configuration files.  
+
+
+
+
+{\ttfamily \#include $<$config\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for Config\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classConfigManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classConfigManager_a04f6cff2c24f27a4c76b030600283304}{Read\+Config}} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Method read from configuration file. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classRoute}{Route}} $\ast$ $>$ \mbox{\hyperlink{classConfigManager_a0db6329b7dd5ac1f92ee262c30df4ef9}{Get\+Routes}} () const
+\begin{DoxyCompactList}\small\item\em Getter of route derived from configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class to read from configuration files. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConfigManager_a0db6329b7dd5ac1f92ee262c30df4ef9}\label{classConfigManager_a0db6329b7dd5ac1f92ee262c30df4ef9}} 
+\index{ConfigManager@{ConfigManager}!GetRoutes@{GetRoutes}}
+\index{GetRoutes@{GetRoutes}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetRoutes()}{GetRoutes()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classRoute}{Route}} $\ast$$>$ Config\+Manager\+::\+Get\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of route derived from configuration file. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Route $\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfigManager_a04f6cff2c24f27a4c76b030600283304}\label{classConfigManager_a04f6cff2c24f27a4c76b030600283304}} 
+\index{ConfigManager@{ConfigManager}!ReadConfig@{ReadConfig}}
+\index{ReadConfig@{ReadConfig}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{ReadConfig()}{ReadConfig()}}
+{\footnotesize\ttfamily int Config\+Manager\+::\+Read\+Config (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Method read from configuration file. 
+
+\begin{DoxyReturn}{Returns}
+a Boolean value indicating if read successfully, if so return 1 else return 0 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/config\+\_\+manager.\+h\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/config\+\_\+manager.\+cc\end{DoxyCompactItemize}

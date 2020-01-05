@@ -1,0 +1,175 @@
+\hypertarget{classRoute}{}\doxysection{Route Class Reference}
+\label{classRoute}\index{Route@{Route}}
+
+
+The main class to define route.  
+
+
+
+
+{\ttfamily \#include $<$route.\+h$>$}
+
+
+
+Collaboration diagram for Route\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classRoute__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoute_a623dad9165299b72eed1e188f7d3f382}{Route}} (std\+::string name, \mbox{\hyperlink{classStop}{Stop}} $\ast$$\ast$stops, double $\ast$distances, int num\+\_\+stops, \mbox{\hyperlink{classPassengerGenerator}{Passenger\+Generator}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructs a route. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoute_a4031b4a218b1530e28dcf5ee5c6fa8e7}\label{classRoute_a4031b4a218b1530e28dcf5ee5c6fa8e7}} 
+\mbox{\hyperlink{classRoute}{Route}} $\ast$ \mbox{\hyperlink{classRoute_a4031b4a218b1530e28dcf5ee5c6fa8e7}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em Copy a route. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoute_a7ecf1d4200f5fe110de4a1d9ea9408c3}\label{classRoute_a7ecf1d4200f5fe110de4a1d9ea9408c3}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{classRoute_a6115a741ea15af716c1a624627ec954a}\label{classRoute_a6115a741ea15af716c1a624627ec954a}} 
+void {\bfseries Report} (std\+::ostream \&)
+\item 
+\mbox{\Hypertarget{classRoute_a529ab995aefd1001b250a6c1ccf77892}\label{classRoute_a529ab995aefd1001b250a6c1ccf77892}} 
+bool \mbox{\hyperlink{classRoute_a529ab995aefd1001b250a6c1ccf77892}{Is\+At\+End}} () const
+\begin{DoxyCompactList}\small\item\em Decide if a route is finished. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoute_aefdcf5a8db15f50d840585914744af6f}\label{classRoute_aefdcf5a8db15f50d840585914744af6f}} 
+void \mbox{\hyperlink{classRoute_aefdcf5a8db15f50d840585914744af6f}{Next\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Change destination\+\_\+stop\+\_\+ to next stop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStop}{Stop}} $\ast$ \mbox{\hyperlink{classRoute_a44af714485a55a8b6da374399e036cc1}{Get\+Destination\+Stop}} () const
+\begin{DoxyCompactList}\small\item\em Get pointer to next stop. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRoute_a81b012b2f33a4ead1b084bd3bc308905}{Get\+Next\+Stop\+Distance}} ()
+\begin{DoxyCompactList}\small\item\em Get distance to next stop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStop}{Stop}} $\ast$ \mbox{\hyperlink{classRoute_a7a6fb8b8a19884f0e4c50700a1674d61}{Get\+Next\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Get pointer to next stop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStop}{Stop}} $\ast$ \mbox{\hyperlink{classRoute_ae5f7278b320a2f6005c33460978ef6d1}{Get\+Previous\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Get pointer to previous stop. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRoute_a8d05485fe63fbd66fd093d423667ca61}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get name of the route. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{classStop}{Stop}} $\ast$ $>$ \mbox{\hyperlink{classRoute_a350630cd6eece03d4d9d05d29b70b525}{Get\+Stops}} ()
+\begin{DoxyCompactList}\small\item\em list of stops \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoute_a0a8e0e870a83ae15b472c573c1ba5924}\label{classRoute_a0a8e0e870a83ae15b472c573c1ba5924}} 
+void \mbox{\hyperlink{classRoute_a0a8e0e870a83ae15b472c573c1ba5924}{Update\+Route\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Update route data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoute_aecc60890a4f23aaffce292f037fcc98d}\label{classRoute_aecc60890a4f23aaffce292f037fcc98d}} 
+\mbox{\hyperlink{structRouteData}{Route\+Data}} \mbox{\hyperlink{classRoute_aecc60890a4f23aaffce292f037fcc98d}{Get\+Route\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Getter of route data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class to define route. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoute_a623dad9165299b72eed1e188f7d3f382}\label{classRoute_a623dad9165299b72eed1e188f7d3f382}} 
+\index{Route@{Route}!Route@{Route}}
+\index{Route@{Route}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{Route()}{Route()}}
+{\footnotesize\ttfamily Route\+::\+Route (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{classStop}{Stop}} $\ast$$\ast$}]{stops,  }\item[{double $\ast$}]{distances,  }\item[{int}]{num\+\_\+stops,  }\item[{\mbox{\hyperlink{classPassengerGenerator}{Passenger\+Generator}} $\ast$}]{pg }\end{DoxyParamCaption})}
+
+
+
+Constructs a route. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em string} & holding a name of a created route. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classStop}{Stop}}} & $\ast$$\ast$ holding the stops the route involves. \\
+\hline
+\mbox{\texttt{ in}}  & {\em double} & $\ast$ holding distances between the stops. \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & holding the number of stops \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoute_a44af714485a55a8b6da374399e036cc1}\label{classRoute_a44af714485a55a8b6da374399e036cc1}} 
+\index{Route@{Route}!GetDestinationStop@{GetDestinationStop}}
+\index{GetDestinationStop@{GetDestinationStop}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetDestinationStop()}{GetDestinationStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStop}{Stop}} $\ast$ Route\+::\+Get\+Destination\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get pointer to next stop. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to next stop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoute_a8d05485fe63fbd66fd093d423667ca61}\label{classRoute_a8d05485fe63fbd66fd093d423667ca61}} 
+\index{Route@{Route}!GetName@{GetName}}
+\index{GetName@{GetName}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Route\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get name of the route. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoute_a7a6fb8b8a19884f0e4c50700a1674d61}\label{classRoute_a7a6fb8b8a19884f0e4c50700a1674d61}} 
+\index{Route@{Route}!GetNextStop@{GetNextStop}}
+\index{GetNextStop@{GetNextStop}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetNextStop()}{GetNextStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStop}{Stop}} $\ast$ Route\+::\+Get\+Next\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get pointer to next stop. 
+
+\begin{DoxyReturn}{Returns}
+pointer to next stop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoute_a81b012b2f33a4ead1b084bd3bc308905}\label{classRoute_a81b012b2f33a4ead1b084bd3bc308905}} 
+\index{Route@{Route}!GetNextStopDistance@{GetNextStopDistance}}
+\index{GetNextStopDistance@{GetNextStopDistance}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetNextStopDistance()}{GetNextStopDistance()}}
+{\footnotesize\ttfamily double Route\+::\+Get\+Next\+Stop\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get distance to next stop. 
+
+\begin{DoxyReturn}{Returns}
+distance to next stop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoute_ae5f7278b320a2f6005c33460978ef6d1}\label{classRoute_ae5f7278b320a2f6005c33460978ef6d1}} 
+\index{Route@{Route}!GetPreviousStop@{GetPreviousStop}}
+\index{GetPreviousStop@{GetPreviousStop}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetPreviousStop()}{GetPreviousStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStop}{Stop}} $\ast$ Route\+::\+Get\+Previous\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get pointer to previous stop. 
+
+\begin{DoxyReturn}{Returns}
+pointer to previous stop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoute_a350630cd6eece03d4d9d05d29b70b525}\label{classRoute_a350630cd6eece03d4d9d05d29b70b525}} 
+\index{Route@{Route}!GetStops@{GetStops}}
+\index{GetStops@{GetStops}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetStops()}{GetStops()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classStop}{Stop}} $\ast$ $>$ Route\+::\+Get\+Stops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+list of stops 
+
+\begin{DoxyReturn}{Returns}
+list of stops 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{route_8h}{route.\+h}}\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{route_8cc}{route.\+cc}}\end{DoxyCompactItemize}

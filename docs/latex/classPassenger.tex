@@ -1,0 +1,104 @@
+\hypertarget{classPassenger}{}\doxysection{Passenger Class Reference}
+\label{classPassenger}\index{Passenger@{Passenger}}
+
+
+The main class to define passenger.  
+
+
+
+
+{\ttfamily \#include $<$passenger.\+h$>$}
+
+
+
+Collaboration diagram for Passenger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPassenger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPassenger_a5c3addb9a6fd03e5e5642ed844e2702c}{Passenger}} (int=-\/1, std\+::string=\char`\"{}Nobody\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a passenger with a standard name and id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a960de3b29fc17a2c2d79c0b79d5cf299}\label{classPassenger_a960de3b29fc17a2c2d79c0b79d5cf299}} 
+void \mbox{\hyperlink{classPassenger_a960de3b29fc17a2c2d79c0b79d5cf299}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Method to update wait at stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_ae2ba639cfef39781ac079778578bd9fe}\label{classPassenger_ae2ba639cfef39781ac079778578bd9fe}} 
+void \mbox{\hyperlink{classPassenger_ae2ba639cfef39781ac079778578bd9fe}{Get\+On\+Bus}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classPassenger}{Passenger}} getting on bus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_a25158560f790ef7ef06d94c414b34f25}\label{classPassenger_a25158560f790ef7ef06d94c414b34f25}} 
+int \mbox{\hyperlink{classPassenger_a25158560f790ef7ef06d94c414b34f25}{Get\+Total\+Wait}} () const
+\begin{DoxyCompactList}\small\item\em Total wait time on stop and on bus. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPassenger_a2acf008ec444afcc859b914ee24add0e}{Is\+On\+Bus}} () const
+\begin{DoxyCompactList}\small\item\em Method to decide if a passenger is on bus. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPassenger_a49db0ee527377aae6077df190a11501c}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Get destination id of the passenger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPassenger_ac37ba6e188ec6805382ba824929d6b7d}\label{classPassenger_ac37ba6e188ec6805382ba824929d6b7d}} 
+void \mbox{\hyperlink{classPassenger_ac37ba6e188ec6805382ba824929d6b7d}{Report}} (std\+::ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Public reporter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class to define passenger. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPassenger_a5c3addb9a6fd03e5e5642ed844e2702c}\label{classPassenger_a5c3addb9a6fd03e5e5642ed844e2702c}} 
+\index{Passenger@{Passenger}!Passenger@{Passenger}}
+\index{Passenger@{Passenger}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{Passenger()}{Passenger()}}
+{\footnotesize\ttfamily Passenger\+::\+Passenger (\begin{DoxyParamCaption}\item[{int}]{destination\+\_\+stop\+\_\+id = {\ttfamily -\/1},  }\item[{std\+::string}]{name = {\ttfamily \char`\"{}Nobody\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a passenger with a standard name and id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & holding an id number \\
+\hline
+\mbox{\texttt{ in}}  & {\em string} & holding a name of a created passenger. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPassenger_a49db0ee527377aae6077df190a11501c}\label{classPassenger_a49db0ee527377aae6077df190a11501c}} 
+\index{Passenger@{Passenger}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily int Passenger\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get destination id of the passenger. 
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPassenger_a2acf008ec444afcc859b914ee24add0e}\label{classPassenger_a2acf008ec444afcc859b914ee24add0e}} 
+\index{Passenger@{Passenger}!IsOnBus@{IsOnBus}}
+\index{IsOnBus@{IsOnBus}!Passenger@{Passenger}}
+\doxysubsubsection{\texorpdfstring{IsOnBus()}{IsOnBus()}}
+{\footnotesize\ttfamily bool Passenger\+::\+Is\+On\+Bus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to decide if a passenger is on bus. 
+
+This function shows status of whether a passenger is on bus.
+
+\begin{DoxyReturn}{Returns}
+a Boolean value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{passenger_8h}{passenger.\+h}}\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{passenger_8cc}{passenger.\+cc}}\end{DoxyCompactItemize}

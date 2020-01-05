@@ -1,0 +1,68 @@
+\hypertarget{classSimulator}{}\doxysection{Simulator Class Reference}
+\label{classSimulator}\index{Simulator@{Simulator}}
+
+
+Virtual class to simulate the transit system.  
+
+
+
+
+{\ttfamily \#include $<$simulator.\+h$>$}
+
+
+
+Inheritance diagram for Simulator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classSimulator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simulator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classSimulator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSimulator_a15576287f566ea0c4f8cf42a49e13757}\label{classSimulator_a15576287f566ea0c4f8cf42a49e13757}} 
+virtual bool {\bfseries Start} (std\+::ostream \&out)=0
+\item 
+\mbox{\Hypertarget{classSimulator_a3651f791c1401e2751665c3b1da1c4c8}\label{classSimulator_a3651f791c1401e2751665c3b1da1c4c8}} 
+virtual bool {\bfseries Update} (std\+::ostream \&out)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSimulator_a2936ff199db47fac93a4ca2970a8bf9a}\label{classSimulator_a2936ff199db47fac93a4ca2970a8bf9a}} 
+std\+::list$<$ \mbox{\hyperlink{classBus}{Bus}} $\ast$ $>$ {\bfseries active\+\_\+buses\+\_\+}
+\item 
+\mbox{\Hypertarget{classSimulator_aa5539319a6b4a70c2d0c6f6220fe44c7}\label{classSimulator_aa5539319a6b4a70c2d0c6f6220fe44c7}} 
+std\+::list$<$ \mbox{\hyperlink{classStop}{Stop}} $\ast$ $>$ {\bfseries all\+\_\+stops\+\_\+}
+\item 
+\mbox{\Hypertarget{classSimulator_a65f81664ec4fcbb62beb71ff24b7c4f4}\label{classSimulator_a65f81664ec4fcbb62beb71ff24b7c4f4}} 
+std\+::vector$<$ \mbox{\hyperlink{classRoute}{Route}} $\ast$ $>$ {\bfseries prototype\+\_\+routes\+\_\+}
+\item 
+\mbox{\Hypertarget{classSimulator_aa14b28ce4f5c0fa6f9e96f9e3b9aae73}\label{classSimulator_aa14b28ce4f5c0fa6f9e96f9e3b9aae73}} 
+std\+::vector$<$ double $\ast$ $>$ {\bfseries distance\+\_\+between\+\_\+sets\+\_\+}
+\item 
+\mbox{\Hypertarget{classSimulator_a666884fa56160538fb7ceac476aedd44}\label{classSimulator_a666884fa56160538fb7ceac476aedd44}} 
+std\+::vector$<$ \mbox{\hyperlink{classPassengerGenerator}{Passenger\+Generator}} $\ast$ $>$ {\bfseries passenger\+\_\+generators\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Virtual class to simulate the transit system. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{simulator_8h}{simulator.\+h}}\end{DoxyCompactItemize}

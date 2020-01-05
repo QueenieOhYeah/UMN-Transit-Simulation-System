@@ -1,0 +1,62 @@
+\hypertarget{classPassengerFactory}{}\doxysection{Passenger\+Factory Class Reference}
+\label{classPassengerFactory}\index{PassengerFactory@{PassengerFactory}}
+
+
+The main class for the generation of passengers.  
+
+
+
+
+{\ttfamily \#include $<$passenger\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for Passenger\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPassengerFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPassenger}{Passenger}} $\ast$ \mbox{\hyperlink{classPassengerFactory_a2952ba78ceb285f445bc768d287230d2}{Generate}} (int, int)
+\begin{DoxyCompactList}\small\item\em Generation of a passenger with a randomized name and random destination within bounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class for the generation of passengers. 
+
+Calls to \mbox{\hyperlink{classPassengerFactory_a2952ba78ceb285f445bc768d287230d2}{Generate}} function to get a new instance of a passenger. This is a static call, not requiring an instance to invoke the method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPassengerFactory_a2952ba78ceb285f445bc768d287230d2}\label{classPassengerFactory_a2952ba78ceb285f445bc768d287230d2}} 
+\index{PassengerFactory@{PassengerFactory}!Generate@{Generate}}
+\index{Generate@{Generate}!PassengerFactory@{PassengerFactory}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPassenger}{Passenger}} $\ast$ Passenger\+Factory\+::\+Generate (\begin{DoxyParamCaption}\item[{int}]{curr\+\_\+stop,  }\item[{int}]{last\+\_\+stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generation of a passenger with a randomized name and random destination within bounds. 
+
+This function will be used for simulation purposes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em curr\+\_\+stop} & Current stop, left bound (not-\/inclusive) \\
+\hline
+\mbox{\texttt{ in}}  & {\em last\+\_\+stop} & Last stop, right bound (inclusive)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classPassenger}{Passenger}} object with name and destination. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{passenger__factory_8h}{passenger\+\_\+factory.\+h}}\item 
+/\+Users/apple/\+Developer/3081\+\_\+f19/repo-\/qiuxx283/project/src/\mbox{\hyperlink{passenger__factory_8cc}{passenger\+\_\+factory.\+cc}}\end{DoxyCompactItemize}
