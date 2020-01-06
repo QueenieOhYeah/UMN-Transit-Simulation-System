@@ -1,4 +1,4 @@
-# UMN Transit Simulation System
+# UMN Transit System Simulation 
 
 ## Download
 Download the project at my github repository
